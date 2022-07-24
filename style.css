@@ -9,7 +9,6 @@ body{
     margin: 2% 5% 0 5%;
     border-bottom: 5px solid #34699a;
     display: block;
-    font-family: "Permanent Marker", cursive;
     text-align: center;
 }
 
@@ -82,7 +81,6 @@ body{
     cursor: pointer;
 }
 #gameContainer{
-    font-family: "Permanent Marker", cursive;
     text-align: center;
 }
 #cellContainer{
