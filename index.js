@@ -87,12 +87,27 @@ function checkWinner(){
     else if(!options.includes("")){
         statusText.textContent = `Draw!`;
         running = false;
-	let confirmAction = confirm("Draw, restart?");
-	if(confirmAction)
-		restartGame()
-	else
-		
-                window.open("","_self")
+	Swal.fire({
+	title: '<Strong>Game Over!',
+	imageUrl: 'img/losers.png',
+	imageWidth: 400,
+	imageHeight: 200,
+	imageAlt: 'Custom image',
+	html:
+	  'Noone Wwin!!',
+	  showCloseButton: false,
+	  showCancelButton: true,
+	  focusConfirm: true,
+	  confirmButtonText:
+	    'Restart?',
+	  cancelButtonText:
+	    'Dismiss'
+	}).then((result) => {
+		if(result.isConfirmed)
+			restartGame()
+		else
+	    Swal.fire('Dismissed', '', 'info')
+	})
     }
     else{
         changePlayer();
