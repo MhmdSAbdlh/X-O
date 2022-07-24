@@ -64,7 +64,7 @@ function checkWinner(){
         running = false;
 	Swal.fire({
 	title: '<Strong>Game Over!',
-	imageUrl: 'https://i.postimg.cc/G2QRqMbY/kisspng-award-prize-active-life-chiropractic-trophy-vector-about-fantasy-golf-tour-challenge-fantasy.png',
+	imageUrl: 'img/win.png',
 	imageWidth: 400,
 	imageHeight: 200,
 	imageAlt: 'Custom image',
