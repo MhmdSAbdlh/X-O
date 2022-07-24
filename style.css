@@ -1,0 +1,93 @@
+body{
+    background-color: #113f67;
+}
+
+.title{
+    color: #84bafb;
+    font-weight: bolder;
+    font-size: 50px;
+    margin: 2% 5% 0 5%;
+    border-bottom: 5px solid #34699a;
+    display: block;
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+}
+
+.rowDiv{    
+    display:block;
+    text-align: center;
+    line-height: 50px;  
+    margin-top: 2%;
+    color: rgb(184,197,254);
+    font-size: x-large;
+}
+
+#fontName{
+    max-width: fit-content;
+}
+
+#undelineLabel, #boldLabel, #italicLabel, #currentKey{
+    margin-left: 2%;
+    background-color: #5089C6;
+    border-radius: 5px;
+    border-color:black;
+    border-width: 1px;
+}
+
+.btns{
+    height: 40px;
+    width: 100px;
+    margin-right: 0%;
+    font-weight: bolder;
+    color: #001E6C;
+    background-color: #5089C6;
+    border-radius: 5px;
+    border-color:black;
+    border-width: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns:hover{
+    box-shadow: 0px 0px 5px rgb(184,197,254);
+    color: wheat;
+}
+
+.sub-title{
+    color: rgb(184,197,254);
+    font-weight: bold;
+    font-size: 25px ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 2%  ;
+}
+
+.credit{
+    width: 100%;
+    color: white;
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+    text-shadow: 2px 3px 5px black;
+}
+
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+}
+#gameContainer{
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+}
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
